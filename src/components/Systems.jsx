@@ -27,41 +27,41 @@ const Systems = () => {
             </div>
 
             {/* CONTENT CONTAINER */}
-            <div className="container mx-auto px-8 relative z-10">
+            <div className="container mx-auto px-6 md:px-8 relative z-10">
 
                 {/* 1. HERO HEADLINE */}
-                <div className="mb-32 text-center">
+                <div className="mb-24 md:mb-32 text-center pt-32 md:pt-0">
                     <motion.h2
                         initial={{ opacity: 0, y: 30 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1.5, ease: "easeOut" }}
-                        className="text-4xl md:text-7xl font-bold tracking-tighter uppercase mb-6 leading-tight"
+                        className="text-5xl md:text-7xl font-bold tracking-tighter uppercase mb-6 leading-tight"
                     >
                         Engineered Globally.<br />
-                        <span className="text-gray-500">Built for Performance.</span>
+                        <span className="text-gray-500 text-3xl md:text-7xl block mt-2 md:mt-0">Built for Performance.</span>
                     </motion.h2>
                     <motion.div
                         initial={{ width: 0 }}
                         whileInView={{ width: 100 }}
                         transition={{ duration: 1.5, delay: 0.5 }}
-                        className="h-px bg-white/20 mx-auto"
+                        className="h-px bg-white/20 mx-auto mt-8 md:mt-6"
                     />
                 </div>
 
                 {/* 2. GLOBAL MANUFACTURING STATEMENT */}
-                <div className="max-w-4xl mx-auto mb-48 text-center">
+                <div className="max-w-4xl mx-auto mb-32 md:mb-48 text-center px-4">
                     <motion.p
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ duration: 1.5, delay: 0.3 }}
-                        className="text-xl md:text-3xl font-light leading-relaxed text-gray-300"
+                        className="text-lg md:text-3xl font-light leading-relaxed text-gray-300"
                     >
                         Through worldwide sourcing and manufacturing partnerships, <span className="text-white font-normal">IC6</span> works with leading facilities across multiple regions to deliver consistent quality, scalable production, and competitive wholesale pricing — without compromising craftsmanship or performance.
                     </motion.p>
                 </div>
 
                 {/* 3. SCALABLE PRODUCTION CALLOUTS */}
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-48 border-t border-b border-white/5 py-12">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-32 md:mb-48 border-t border-b border-white/5 py-16 md:py-12 px-4 md:px-0">
                     {[
                         "Consistent quality standards",
                         "Scalable production capacity",
@@ -82,9 +82,9 @@ const Systems = () => {
                 </div>
 
                 {/* 4. AFTERMARKET SPECIALIZATION */}
-                <div className="flex flex-col md:flex-row items-center gap-16 md:gap-32">
+                <div className="flex flex-col md:flex-row items-center gap-12 md:gap-32 pb-24">
                     {/* Left: Headline */}
-                    <div className="w-full md:w-1/2 text-right">
+                    <div className="w-full md:w-1/2 text-center md:text-right">
                         <motion.h3
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
@@ -99,20 +99,20 @@ const Systems = () => {
 
                     {/* Divider */}
                     <div className="hidden md:block w-px h-32 bg-white/20" />
+                    <div className="md:hidden w-32 h-px bg-white/20" />
 
                     {/* Right: Text */}
-                    <div className="w-full md:w-1/2">
+                    <div className="w-full md:w-1/2 text-center md:text-left px-4">
                         <motion.p
                             initial={{ opacity: 0, x: 30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 1.5, delay: 0.3 }}
-                            className="text-lg md:text-xl font-light text-gray-400 leading-relaxed max-w-md"
+                            className="text-lg md:text-xl font-light text-gray-400 leading-relaxed max-w-md mx-auto md:mx-0"
                         >
                             We specialize in high-performance carbon fibre aerodynamic and automotive components, supplying the global aftermarket with products built for serious builds and real results.
                         </motion.p>
                     </div>
                 </div>
-
             </div>
         </section>
     );

@@ -4,7 +4,6 @@ import ScrollyTelling from '../components/ScrollyTelling';
 import EngineeredExtreme from '../components/EngineeredExtreme';
 import PerformanceFeature from '../components/PerformanceFeature';
 import GlobalCapability from '../components/GlobalCapability';
-import ImmersiveTransition from '../components/ImmersiveTransition';
 import { Link } from 'react-router-dom';
 
 const Home = () => {
@@ -16,8 +15,6 @@ const Home = () => {
                 <EngineeredExtreme />
 
                 <PerformanceFeature />
-
-                <ImmersiveTransition />
 
                 <GlobalCapability />
 

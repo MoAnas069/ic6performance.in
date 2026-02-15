@@ -59,8 +59,8 @@ const SystemRow = ({ title, description, image, align }) => {
     const isLeft = align === 'left';
 
     return (
-        <div className="min-h-screen py-24 flex items-center relative overflow-hidden group">
-            <div className={`container mx-auto px-8 flex flex-col md:flex-row ${isLeft ? '' : 'md:flex-row-reverse'} items-center gap-16 md:gap-32`}>
+        <div className="min-h-screen py-16 md:py-24 flex items-center relative overflow-hidden group">
+            <div className={`container mx-auto px-6 md:px-8 flex flex-col md:flex-row ${isLeft ? '' : 'md:flex-row-reverse'} items-center gap-12 md:gap-32`}>
 
                 {/* Visual Side */}
                 <div className="w-full md:w-3/5 perspective-[1000px]">
@@ -82,15 +82,15 @@ const SystemRow = ({ title, description, image, align }) => {
                 </div>
 
                 {/* Content Side */}
-                <div className="w-full md:w-2/5">
+                <div className="w-full md:w-2/5 text-center md:text-left">
                     <motion.div
                         initial={{ opacity: 0, x: isLeft ? 30 : -30 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1.5, delay: 0.2 }}
                     >
-                        <h3 className="text-4xl md:text-5xl font-bold tracking-tight mb-6 uppercase leading-none">{title}</h3>
-                        <div className="w-16 h-1 bg-aether-red mb-8" />
-                        <p className="text-xl text-gray-400 font-light leading-relaxed">{description}</p>
+                        <h3 className="text-3xl md:text-5xl font-bold tracking-tight mb-4 md:mb-6 uppercase leading-none">{title}</h3>
+                        <div className="w-16 h-1 bg-aether-red mb-6 md:mb-8 mx-auto md:mx-0" />
+                        <p className="text-lg md:text-xl text-gray-400 font-light leading-relaxed">{description}</p>
                     </motion.div>
                 </div>
 

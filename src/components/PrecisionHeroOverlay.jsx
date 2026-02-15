@@ -11,12 +11,12 @@ const PrecisionHeroOverlay = () => {
                 transition={{ duration: 1.5, ease: "easeOut" }}
                 className="flex justify-between items-start"
             >
-                <div>
-                    <h1 className="text-4xl md:text-6xl font-bold tracking-tighter uppercase relative z-50">
+                <div className="w-full text-center md:text-left">
+                    <h1 className="text-5xl md:text-6xl font-bold tracking-tighter uppercase relative z-50 flex flex-col md:block items-center">
                         <span className="text-[#FF0000] drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]">IC6</span>
-                        <span className="text-white ml-3">performance.com</span>
+                        <span className="text-white text-lg md:text-6xl md:ml-3 tracking-widest md:tracking-tighter mt-2 md:mt-0">performance.com</span>
                     </h1>
-                    <p className="text-xs md:text-sm font-mono text-gray-400 mt-2 tracking-[0.2em] uppercase">
+                    <p className="text-[10px] md:text-sm font-mono text-gray-400 mt-3 md:mt-2 tracking-[0.3em] uppercase">
                         <span className="text-[#FF0000]">EST</span> -2026
                     </p>
                 </div>
