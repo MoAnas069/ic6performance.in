@@ -28,7 +28,6 @@ export default function ScrollyTelling() {
 
     const onImageLoad = () => {
       loadedCount++;
-      const progress = Math.round((loadedCount / TOTAL_FRAMES) * 100);
       // Optional: update loading progress state if needed
       if (loadedCount === TOTAL_FRAMES) {
         setImagesLoaded(true);

@@ -1,5 +1,6 @@
 import React from 'react';
-import { motion, useScroll, useTransform } from 'framer-motion';
+import { motion } from 'framer-motion';
+import Logo from './Logo';
 
 const PrecisionHeroOverlay = () => {
     return (
@@ -9,26 +10,22 @@ const PrecisionHeroOverlay = () => {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
-                className="flex justify-between items-start"
+                className="flex justify-center items-start w-full"
             >
-                <div className="w-full text-center md:text-left">
-                    <h1 className="text-5xl md:text-6xl font-bold tracking-tighter uppercase relative z-50 flex flex-col md:block items-center">
-                        <span className="text-[#FF0000] drop-shadow-[0_0_20px_rgba(255,0,0,0.8)]">IC6</span>
-                        <span className="text-white text-lg md:text-6xl md:ml-3 tracking-widest md:tracking-tighter mt-2 md:mt-0">performance.com</span>
-                    </h1>
-                    <p className="text-[10px] md:text-sm font-mono text-gray-400 mt-3 md:mt-2 tracking-[0.3em] uppercase">
-                        <span className="text-[#FF0000]">EST</span> -2026
-                    </p>
+                <div className="w-full flex flex-col items-center">
+                    <Logo className="scale-75 md:scale-100 origin-top" />
+
+                    {/* Optional Status Text - Now matching the font style */}
+                    <div className="mt-4 flex flex-col items-center space-y-1 font-['Michroma']">
+                        <div className="flex items-center gap-2">
+                            <div className="w-1.5 h-1.5 bg-[#FF0000] rounded-full animate-pulse blur-[1px]" />
+                            <span className="text-[10px] text-gray-400 uppercase tracking-widest opacity-70">
+                                System Online
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
-                {/* Optional Status Indicators */}
-                <div className="hidden md:flex flex-col items-end space-y-2">
-                    <div className="flex items-center gap-2">
-                        <div className="w-2 h-2 bg-[#FF0000] rounded-full animate-pulse" />
-                        <span className="text-xs font-mono text-gray-500 uppercase">System Online</span>
-                    </div>
-                    <div className="text-xs font-mono text-gray-600 uppercase">v2.0.4</div>
-                </div>
             </motion.div>
 
             {/* Bottom Scroll Prompt */}
@@ -38,8 +35,8 @@ const PrecisionHeroOverlay = () => {
                 transition={{ delay: 2, duration: 1 }}
                 className="flex justify-center"
             >
-                <div className="flex flex-col items-center gap-2">
-                    <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-gray-500">Scroll to Initialize</span>
+                <div className="flex flex-col items-center gap-2 font-['Michroma']">
+                    <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500">Scroll to Initialize</span>
                     <motion.div
                         animate={{ y: [0, 10, 0] }}
                         transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
