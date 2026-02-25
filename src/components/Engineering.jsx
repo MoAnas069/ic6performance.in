@@ -29,7 +29,7 @@ const Engineering = () => {
             <SystemRow
                 title="Performance Wings & Spoilers"
                 description="Designed to increase downforce, improve stability, and enhance high-speed control."
-                image="/assets/wing.png"
+                image="/images/6.jpeg"
                 align="left"
             />
 
@@ -37,15 +37,15 @@ const Engineering = () => {
             <SystemRow
                 title="Front Splitters & Lip Systems"
                 description="Engineered to optimize airflow, reduce front-end lift, and improve aerodynamic balance."
-                image="/assets/splitter.png"
+                image="/images/20.jpeg"
                 align="right"
             />
 
-            {/* SYSTEM 3: REAR DIFFUSERS */}
+            {/* SYSTEM 3: REAR DIFFUSERS & SIDE SKIRTS */}
             <SystemRow
-                title="Rear Diffuser Systems"
+                title="Aero Component Systems"
                 description="Designed to manage underbody airflow, reduce turbulence, and improve overall aerodynamic efficiency."
-                image="/assets/diffuser.png"
+                image="/images/2.jpeg"
                 align="left"
             />
 

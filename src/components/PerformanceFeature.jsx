@@ -18,12 +18,14 @@ const PerformanceFeature = () => {
                     {/* Subtle Glow on Hover */}
                     <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none z-20 mix-blend-overlay" />
 
-                    <motion.div style={{ y }} className="w-full h-full relative z-10">
-                        <div className="w-full h-full bg-gradient-to-br from-[#111] to-black flex items-center justify-center border border-white/5 group-hover:border-white/20 transition-colors duration-700">
-                            <div className="absolute inset-0 bg-radial-gradient from-white/5 to-transparent opacity-20" />
-                            <span className="text-white/10 text-9xl font-bold uppercase tracking-tighter select-none">
-                                Aero<br />Sys
-                            </span>
+                    <motion.div style={{ y }} className="w-full h-full relative z-10 bg-[#0a0a0a]">
+                        <div className="w-full h-full flex items-center justify-center border border-white/5 group-hover:border-white/20 transition-colors duration-700">
+                            <img
+                                src="/images/17.jpeg"
+                                alt="Aerodynamic Simulation Component"
+                                className="w-full h-full object-cover filter contrast-[1.1] saturate-[0.7]"
+                                loading="lazy"
+                            />
                         </div>
                     </motion.div>
                 </div>

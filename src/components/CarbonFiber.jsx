@@ -95,23 +95,49 @@ const CarbonFiber = () => {
                     />
                 </div>
 
-                {/* TEXT SEGMENTS */}
-                <div className="max-w-4xl mx-auto space-y-24">
+                {/* TEXT & IMAGE SEGMENTS */}
+                <div className="max-w-6xl mx-auto space-y-32">
 
                     {/* Segment 1 */}
-                    <TextSegment delay={0.2}>
-                        We use aerospace-grade carbon fibre prepreg fabric — the same class of material trusted in aircraft and advanced engineering applications.
-                    </TextSegment>
+                    <div className="flex flex-col md:flex-row items-center gap-16 px-4">
+                        <div className="w-full md:w-1/2 text-left">
+                            <TextSegment delay={0.2} className="text-left">
+                                We use aerospace-grade carbon fibre prepreg fabric — the same class of material trusted in aircraft and advanced engineering applications.
+                            </TextSegment>
+                        </div>
+                        <motion.div
+                            initial={{ opacity: 0, x: 20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1.5, delay: 0.4 }}
+                            className="w-full md:w-1/2"
+                        >
+                            <img src="/images/8.jpeg" alt="Carbon Fiber Detail" className="w-full h-auto object-cover border border-white/10 filter contrast-[1.1] saturate-[0.7]" loading="lazy" />
+                        </motion.div>
+                    </div>
 
                     {/* Segment 2 */}
-                    <TextSegment delay={0.4}>
-                        Selected for its exceptional strength-to-weight ratio, this material delivers outstanding durability, precision, and performance without unnecessary weight.
-                    </TextSegment>
+                    <div className="flex flex-col md:flex-row-reverse items-center gap-16 px-4">
+                        <div className="w-full md:w-1/2 text-left md:text-right">
+                            <TextSegment delay={0.4} className="text-left md:text-right">
+                                Selected for its exceptional strength-to-weight ratio, this material delivers outstanding durability, precision, and performance without unnecessary weight.
+                            </TextSegment>
+                        </div>
+                        <motion.div
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1.5, delay: 0.6 }}
+                            className="w-full md:w-1/2 bg-white"
+                        >
+                            <img src="/images/10.jpeg" alt="Precision Carbon Wing" className="w-full h-auto object-cover filter contrast-[1.1] saturate-[0.8]" loading="lazy" />
+                        </motion.div>
+                    </div>
 
                     {/* Segment 3 */}
-                    <TextSegment delay={0.6}>
-                        Every weave is carefully aligned to ensure structural integrity, consistency, and a flawless finish — enabling performance under extreme conditions while meeting the highest standards of quality and reliability.
-                    </TextSegment>
+                    <div className="max-w-4xl mx-auto pt-16 border-t border-white/10 px-4">
+                        <TextSegment delay={0.6} className="text-center mx-auto">
+                            Every weave is carefully aligned to ensure structural integrity, consistency, and a flawless finish — enabling performance under extreme conditions while meeting the highest standards of quality and reliability.
+                        </TextSegment>
+                    </div>
 
                 </div>
 
@@ -167,12 +193,12 @@ const CarbonFiber = () => {
     );
 };
 
-const TextSegment = ({ children, delay }) => (
+const TextSegment = ({ children, delay, className = "text-center" }) => (
     <motion.p
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.5, delay: delay, ease: "easeOut" }}
-        className="text-xl md:text-3xl font-light leading-relaxed text-gray-300 text-center"
+        className={`text-xl md:text-3xl font-light leading-relaxed text-gray-300 ${className}`}
     >
         {children}
     </motion.p>

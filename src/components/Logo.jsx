@@ -34,51 +34,26 @@ const Logo = ({ className = "" }) => {
                     iC6
                 </span>
 
-                {/* PERFORMANCE.COM - Split to extend 'p' tail */}
-                <span className="flex items-baseline ml-1">
-                    {/* The 'p' with extended tail */}
-                    <span className="relative font-['Michroma'] italic font-bold text-3xl md:text-5xl tracking-tight"
-                        style={{
-                            // Same gradient as before
-                            background: 'linear-gradient(180deg, #ffffff 0%, #dbe0e6 30%, #aeb5bd 55%, #858e96 75%, #7a828a 100%)',
-                            WebkitBackgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent',
-                            transform: 'skewX(-12deg)',
-                            opacity: 1,
-                            filter: 'none',
-                            mixBlendMode: 'normal',
-                            textShadow: '0 0 10px rgba(255,255,255,0.3), 0 0 20px rgba(255,255,255,0.1)'
-                        }}>
-                        p
-                        {/* THE TAIL EXTENSION */}
-                        <span className="absolute left-[0.15em] bottom-[-0.15em] w-[0.14em] h-[0.4em] origin-top"
-                            style={{
-                                background: 'linear-gradient(to bottom, #7a828a, #5c6269)', // Dark metallic to match bottom of letter
-                                transform: 'skewX(0deg)', // Already inside a skewed parent? No, skews stack. Parent has -12deg.
-                                // Actually, pseudo-element inherits transform? No, it's a child span.
-                                // If parent is skewed, child aligns with that skew.
-                                // So a vertical rect will appear skewed. That's likely what we want for the stem.
-                                borderRadius: '0 0 2px 2px',
-                                opacity: 1
-                            }}
-                        />
-                    </span>
+                {/* PERFORMANCE.COM - Pure Brushed Steel */}
+                <span className="font-['Michroma'] italic font-bold text-3xl md:text-5xl tracking-tight ml-1"
+                    style={{
+                        // Brightened Gradient: Lightened bottom stop from #5c6269 to #858e96
+                        background: 'linear-gradient(180deg, #ffffff 0%, #dbe0e6 30%, #aeb5bd 55%, #858e96 75%, #7a828a 100%)',
+                        WebkitBackgroundClip: 'text',
+                        WebkitTextFillColor: 'transparent',
 
-                    {/* Rest of the word */}
-                    <span className="font-['Michroma'] italic font-bold text-3xl md:text-5xl tracking-tight"
-                        style={{
-                            background: 'linear-gradient(180deg, #ffffff 0%, #dbe0e6 30%, #aeb5bd 55%, #858e96 75%, #7a828a 100%)',
-                            WebkitBackgroundClip: 'text',
-                            WebkitTextFillColor: 'transparent',
-                            transform: 'skewX(-12deg)',
-                            paddingRight: '0.1em',
-                            opacity: 1,
-                            filter: 'none',
-                            mixBlendMode: 'normal',
-                            textShadow: '0 0 10px rgba(255,255,255,0.3), 0 0 20px rgba(255,255,255,0.1)'
-                        }}>
-                        erformance.com
-                    </span>
+                        transform: 'skewX(-12deg)',
+                        // Add padding to prevent skewed edge clipping on 'm'
+                        paddingRight: '0.1em',
+
+                        opacity: 1,
+                        filter: 'none',
+                        mixBlendMode: 'normal',
+
+                        // Added White Glow for visibility against dark background
+                        textShadow: '0 0 10px rgba(255,255,255,0.3), 0 0 20px rgba(255,255,255,0.1)'
+                    }}>
+                    performance.com
                 </span>
             </div>
 
