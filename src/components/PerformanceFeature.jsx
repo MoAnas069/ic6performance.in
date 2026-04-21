@@ -20,11 +20,13 @@ const PerformanceFeature = () => {
 
                     <motion.div style={{ y }} className="w-full h-full relative z-10 bg-[#0a0a0a]">
                         <div className="w-full h-full flex items-center justify-center border border-white/5 group-hover:border-white/20 transition-colors duration-700">
-                            <img
-                                src="/images/17.jpeg"
-                                alt="Aerodynamic Simulation Component"
+                            <video
+                                src="/images/ic6.mp4"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
                                 className="w-full h-full object-cover filter contrast-[1.1] saturate-[0.7]"
-                                loading="lazy"
                             />
                         </div>
                     </motion.div>

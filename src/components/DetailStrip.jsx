@@ -1,12 +1,12 @@
 import React from 'react';
 
 const detailImages = [
-    "/images/12.jpeg",
-    "/images/168.jpeg",
-    "/images/13.jpeg",
-    "/images/14.jpeg",
-    "/images/15.jpeg",
-    "/images/16.jpeg"
+    "/images/12.webp",
+    "/images/168.webp",
+    "/images/13.webp",
+    "/images/14.webp",
+    "/images/15.webp",
+    "/images/16.webp"
 ];
 
 const DetailStrip = () => {

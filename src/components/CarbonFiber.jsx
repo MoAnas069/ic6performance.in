@@ -111,7 +111,7 @@ const CarbonFiber = () => {
                             transition={{ duration: 1.5, delay: 0.4 }}
                             className="w-full md:w-1/2"
                         >
-                            <img src="/images/8.jpeg" alt="Carbon Fiber Detail" className="w-full h-auto object-cover border border-white/10 filter contrast-[1.1] saturate-[0.7]" loading="lazy" />
+                            <img src="/images/8.webp" alt="Carbon Fiber Detail" className="w-full h-auto object-cover border border-white/10 filter contrast-[1.1] saturate-[0.7]" loading="lazy" />
                         </motion.div>
                     </div>
 
@@ -128,7 +128,7 @@ const CarbonFiber = () => {
                             transition={{ duration: 1.5, delay: 0.6 }}
                             className="w-full md:w-1/2 bg-white"
                         >
-                            <img src="/images/10.jpeg" alt="Precision Carbon Wing" className="w-full h-auto object-cover filter contrast-[1.1] saturate-[0.8]" loading="lazy" />
+                            <img src="/images/10.webp" alt="Precision Carbon Wing" className="w-full h-auto object-cover filter contrast-[1.1] saturate-[0.8]" loading="lazy" />
                         </motion.div>
                     </div>
 

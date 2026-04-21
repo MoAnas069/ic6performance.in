@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform, useMotionValueEvent } from "framer-mot
 import PrecisionHeroOverlay from "./PrecisionHeroOverlay";
 
 const TOTAL_FRAMES = 240;
-const FRAME_PATH = (index) => `/sequence/ezgif-frame-${index.toString().padStart(3, "0")}.jpg`;
+const FRAME_PATH = (index) => `/sequence/ezgif-frame-${index.toString().padStart(3, "0")}.webp`;
 
 export default function ScrollyTelling() {
   const canvasRef = useRef(null);

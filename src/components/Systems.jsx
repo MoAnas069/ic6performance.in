@@ -122,7 +122,7 @@ const Systems = () => {
                         transition={{ duration: 1 }}
                         className="group overflow-hidden relative aspect-[4/3] bg-[#050505] border border-white/5 hover:border-white/20 transition-colors duration-500 rounded-sm"
                     >
-                        <img src="/images/22.jpeg" alt="Track Implementation 1" className="w-full h-full object-cover filter contrast-[1.1] saturate-[0.8] opacity-80 group-hover:opacity-100 mix-blend-lighten group-hover:scale-105 transition-all duration-700" loading="lazy" />
+                        <img src="/images/22.webp" alt="Track Implementation 1" className="w-full h-full object-cover filter contrast-[1.1] saturate-[0.8] opacity-80 group-hover:opacity-100 mix-blend-lighten group-hover:scale-105 transition-all duration-700" loading="lazy" />
                     </motion.div>
 
                     <motion.div
@@ -131,7 +131,7 @@ const Systems = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         className="group overflow-hidden relative aspect-[4/3] bg-[#050505] border border-white/5 hover:border-white/20 transition-colors duration-500 rounded-sm md:mt-16"
                     >
-                        <img src="/images/23.jpeg" alt="Track Implementation 2" className="w-full h-full object-cover filter contrast-[1.1] saturate-[0.8] opacity-80 group-hover:opacity-100 mix-blend-lighten group-hover:scale-105 transition-all duration-700" loading="lazy" />
+                        <img src="/images/23.webp" alt="Track Implementation 2" className="w-full h-full object-cover filter contrast-[1.1] saturate-[0.8] opacity-80 group-hover:opacity-100 mix-blend-lighten group-hover:scale-105 transition-all duration-700" loading="lazy" />
                     </motion.div>
 
                     <motion.div
@@ -140,7 +140,7 @@ const Systems = () => {
                         transition={{ duration: 1, delay: 0.4 }}
                         className="group overflow-hidden relative aspect-[4/3] bg-[#050505] border border-white/5 hover:border-white/20 transition-colors duration-500 rounded-sm md:-mt-8"
                     >
-                        <img src="/images/7.jpeg" alt="Track Implementation 3" className="w-full h-full object-cover filter contrast-[1.1] saturate-[0.8] opacity-80 group-hover:opacity-100 mix-blend-lighten group-hover:scale-105 transition-all duration-700" loading="lazy" />
+                        <img src="/images/7.webp" alt="Track Implementation 3" className="w-full h-full object-cover filter contrast-[1.1] saturate-[0.8] opacity-80 group-hover:opacity-100 mix-blend-lighten group-hover:scale-105 transition-all duration-700" loading="lazy" />
                     </motion.div>
                 </div>
             </div>

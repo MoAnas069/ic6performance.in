@@ -6,19 +6,19 @@ const products = [
         id: "01",
         title: "Aero Side System",
         description: "Precision-engineered side aerodynamic elements for optimized lateral airflow.",
-        image: "/images/2.jpeg"
+        image: "/images/2.webp"
     },
     {
         id: "02",
         title: "Front Splitter Element",
         description: "High-downforce carbon front splitter for increased front-axle stability.",
-        image: "/images/20.jpeg"
+        image: "/images/20.webp"
     },
     {
         id: "03",
         title: "Rear Downforce Wing",
         description: "Aerodynamic rear wing system maximizing rear-axle traction under load.",
-        image: "/images/6.jpeg"
+        image: "/images/6.webp"
     }
 ];
 
